@@ -1,1 +1,28 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+  font-family: 'Abel', sans-serif;
+}
+
+#content {
+  min-height: 1360px;
+  margin-top: 80px;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+footer * {
+  color: white;
+}
+
+footer a:hover {
+  color: grey;
+  text-decoration: none;
+}
+
+button, a {
+  cursor: pointer;
+}

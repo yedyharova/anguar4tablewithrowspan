@@ -1,31 +1,23 @@
-# Test task - Olena Yedyharova
+# The task for DeepCode
 
 The first Angular 4 learning iteration
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.5.0.
+The data requested from remote server.
+The data transformed into user-friendly HTML table 
+The app allows file uploading.
+Response validation.
 
-## The help will be here for now
+## Techs
 
-### Development server
+### Angular 4
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+One framework.
+Mobile & desktop.
 
-### Code scaffolding
+### Bootstrap 4
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Bootstrap is an open source toolkit for developing with HTML, CSS, and JS
 
-### Build
+###Any question
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
-
-### Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-### Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-### Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+yedyharova@gmail.com

@@ -1,0 +1,38 @@
+<table class="table table-bordered table-hover table-sm table-responsive-sm">
+  <caption>Transactions {{now | date:'MMM dd, y hh:mm:ss a'}}</caption>
+  <thead class="thead-light">
+    <tr>
+      <th>Client ID</th>
+      <th>Credit Card ID</th>
+      <th>Month</th>
+      <th>Timestamp</th>
+      <th>Transaction Type</th>
+      <th>Amount</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let row of htmlTable">
+      <td *ngIf="row.clientID!=undefined" [attr.rowspan]="row.clientID!=undefined?row.clientID.rowSpan:1"  [ngClass]="row.isTotal?'table-secondary':''">
+      {{row.clientID.text}}
+      </td>
+      <td *ngIf="row.creditCard!=undefined" [attr.rowspan]="row.creditCard!=undefined?row.creditCard.rowSpan:1">
+        {{row.creditCard.text}}
+      </td>
+      <td *ngIf="row.month!=undefined" [attr.rowspan]="row.month!=undefined?row.month.rowSpan:1">
+        {{row.month.text | monthFromNumber}}
+      </td>
+      <td *ngIf="row.time!=undefined" [ngClass]="row.isTotal?'table-secondary':''">
+        {{row.time.text | date:'MMM dd, y hh:mm:ss a'}}
+      </td>
+      <td *ngIf="row.transactionType!=undefined" [ngClass]="row.isTotal?'table-secondary':''">
+        {{row.transactionType.text}}
+      </td>
+      <td *ngIf="row.amount!=undefined" [ngClass]="row.isTotal?'table-secondary':''">
+        {{row.amount.text | currency:' ':'symbol':'.2'}}
+      </td>
+    </tr>
+  </tbody>
+</table>
+<div #errorGet [hidden]="true" class="alert alert-danger alert-dismissible fade" role="alert">
+  <span>Could not retrieve the data</span>
+</div>
